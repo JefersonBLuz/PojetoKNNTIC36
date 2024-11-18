@@ -1,5 +1,12 @@
 # Projeto: Análise de Influenciadores do Instagram
 
+1. [Descrição.](#descrição)
+2. [Dados.](#base-de-dados)
+3. [Instruções.](#instruções-para-replicar-o-projeto)
+4. [Resultados.](#resultados)
+5. [Observações.](#observações)
+6. [Próximos Passos.](#próximos-passos)
+
 ## Descrição:
 
 Este notebook analisa dados de influenciadores do Instagram para identificar fatores que influenciam a pontuação de influência. O código carrega o dataset "top_insta_influencers_data.csv" do Kaggle (https://www.kaggle.com/datasets/surajjha101/top-instagram-influencers-data-cleaned), realiza pré-processamento, seleciona características relevantes, treina um modelo KNN para prever a pontuação de influência e avalia seu desempenho.
