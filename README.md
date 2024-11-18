@@ -21,7 +21,7 @@ O dataset utilizado é "top_insta_influencers_data.csv" obtido do Kaggle. Ele co
 ## Instruções para Replicar o Projeto:
 
 Obter o dataset: Baixe o dataset "top_insta_influencers_data.csv" do Kaggle e salve-o no mesmo diretório que este notebook.
-ou execute o código a seguir:
+Ou execute o código a seguir:
 ```sh
 # Biblioteca de importação
 import gdown
@@ -34,33 +34,36 @@ Instalar as bibliotecas: Certifique-se de ter as seguintes bibliotecas Python in
 * matplotlib.pyplot
 * scikit-learn
 * seaborn (opcional, para gráficos)
-Executar o notebook: Abra o notebook em um ambiente Jupyter Notebook e execute todas as células de código (de cima para baixo).
+
+**Executar o notebook: Abra o notebook em um ambiente Jupyter Notebook e execute todas as células de código (de cima para baixo).**__
 
 ## Resultados:
 
-    O modelo KNN foi treinado com otimização de hiperparâmetros usando GridSearchCV.
+O modelo KNN foi treinado com otimização de hiperparâmetros usando GridSearchCV.
 
-    Os melhores hiperparâmetros encontrados foram:
-        algoritmo: 'auto'
-        métrica: 'manhattan'
-        número de vizinhos (n_neighbors): 9
-        pesos: 'distance'
+**Os melhores hiperparâmetros encontrados foram:**
 
-    As métricas de avaliação do modelo KNN no conjunto de teste foram:
-        Erro Absoluto Médio (MAE): 2.80
-        Erro Quadrático Médio (MSE): 13.83
-        Raiz do Erro Quadrático Médio (RMSE): 3.72
-        Coeficiente de R² (R²): 0.29
+* algoritmo: 'auto'
+* métrica: 'manhattan'
+* número de vizinhos (n_neighbors): 9
+* pesos: 'distance'
 
-    O código também analisa a distribuição dos influenciadores por continente e gera gráficos exploratórios para visualizar a relação entre as características e a pontuação de influência.
+**As métricas de avaliação do modelo KNN no conjunto de teste foram:**
+
+* Erro Absoluto Médio (MAE): 2.80
+* Erro Quadrático Médio (MSE): 13.83
+* Raiz do Erro Quadrático Médio (RMSE): 3.72
+* Coeficiente de R² (R²): 0.29
+
+_O código também analisa a distribuição dos influenciadores por continente e gera gráficos exploratórios para visualizar a relação entre as características e a pontuação de influência._
 
 ## Observações:
 
-    O código lida com valores ausentes e realiza transformações para preparar os dados para o modelo.
-    O país de origem do influenciador foi mapeado para um continente numérico. Países não mapeados foram identificados e contabilizados separadamente.
+1. O código lida com valores ausentes e realiza transformações para preparar os dados para o modelo.
+2. O país de origem do influenciador foi mapeado para um continente numérico. Países não mapeados foram identificados e contabilizados separadamente.
 
 ## Próximos Passos:
 
-    Explorar outros modelos de aprendizado de máquina para a previsão de pontuação de influência.
-    Analisar o impacto de características textuais (canal_info) após um pré-processamento adequado.
-    Incorporar técnicas de feature engineering para criar novas características a partir das existentes.
+* Explorar outros modelos de aprendizado de máquina para a previsão de pontuação de influência.
+* Analisar o impacto de características textuais (canal_info) após um pré-processamento adequado.
+* Incorporar técnicas de feature engineering para criar novas características a partir das existentes.
